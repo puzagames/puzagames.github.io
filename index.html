@@ -1,39 +1,53 @@
-
-<!doctype html>
-<html lang="en" class="squarespace-damask">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="traceparent" content="{traceparent}">
-    <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
-    <link rel="preload" as="style" href="//assets.squarespace.com/universal/fonts/squarespace-clarkson-v2.css">
-    <link rel="stylesheet" type="text/css" href="//assets.squarespace.com/universal/fonts/squarespace-clarkson-v2.css">
-    <title>Squarespace</title>
-    <script src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js" nomodule type="text/javascript" crossorigin="anonymous"></script>
-    <script src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js" type="text/javascript" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://insights.squarespace.com" />
-  <script defer src="https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-6b1537e7ffe17d69-min.en-US.js"></script><script defer src="https://assets.squarespace.com/universal/scripts-compressed/error-reporter-9cccb9f7cdd86ce8-min.en-US.js"></script><script defer src="https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-7a2fb19c02b976ee-min.en-US.js"></script><script defer src="https://assets.squarespace.com/universal/scripts-compressed/config-appshell-c25c312311184cc4-min.en-US.js"></script></head>
-  <body class="squarespace-config squarespace-editable">
-    <div class="sqs-damask" data-test="appshell-container"></div>
-    <!-- Google Tag Manager -->
-    <noscript>
-      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-BCCP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <script type="application/json" id="squarespace-frame-rollups">
-      {"squarespace-management":{"css":"https://assets.squarespace.com/universal/scripts-compressed/../styles-compressed/management-e20fa741cd33286d-min.en-US.css"}}
-    </script>
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
-        'gtm.start': new Date().getTime(),event:'gtm.js'
-      });
-      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-BCCP');
-    </script>
-    <!-- End Google Tag Manager -->
-    <script async src="//consent.trustarc.com/notice?domain=squarespace.com&c=teconsent&js=nj&noticeType=bb&text=true&pn=2&gtm=1&pcookien" crossorigin="anonymous"></script>
-     <!-- TrustArc -->
-    <!---->
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #1a1a2e;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e94560;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #e94560;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+        .dots span {
+            animation: blink 1.5s infinite;
+        }
+        .dots span:nth-child(2) { animation-delay: 0.3s; }
+        .dots span:nth-child(3) { animation-delay: 0.6s; }
+        @keyframes blink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="profile.jpg" alt="Profile" class="photo">
+        <h1>Coming Soon<span class="dots"><span>.</span><span>.</span><span>.</span></span></h1>
+    </div>
+</body>
 </html>
